@@ -630,6 +630,7 @@ let quoteAuthor = document.getElementById('quote-author');
 let newQuote = () => {
     //random quote selector
     let randomQuote = quoteList[Math.floor(Math.random() * quoteList.length)];
+    //change innerHTML
     quoteBody.innerHTML = randomQuote.text;
     quoteAuthor.innerHTML = randomQuote.author;
 }
